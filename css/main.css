@@ -1,0 +1,190 @@
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,121,9,1) 35%, rgba(255,0,0,1) 100%);
+}
+
+header {
+	text-align: center;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 10;
+}
+
+aside {
+    color: black;
+    width: calc(100% - 10px);
+	background-color: lightgray;
+	padding: 10px;
+	border-radius: 10px;
+	flex-grow: 1;
+}
+
+main {
+	width: calc(100% - 10px);
+	border: 1px solid #000;
+	background-color: rgba(220,220,220,0.5);
+	border-radius: 10px;
+    color: white;
+    flex-grow: 10;
+}
+
+header, main, aside, section, article, footer {
+	margin: 5px;
+}
+
+header, footer {
+    width: calc(100% - 10px);
+	border: 1px solid #000;
+	background-color: rgba(220,220,220,0.5);
+	border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+#content {
+    width: calc(100% - 10px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	border-radius: 10px;
+    border: 1px double #000;
+}
+
+#content section, #content article {
+    width: calc(100% - 10px);
+	flex-grow: 10;
+	background-color: rgba(0, 0, 0, .50);
+	text-align: center;
+}
+
+/*#content section img {
+	display: block;
+	width: 20%;
+}*/
+
+#content article img {
+	display: block;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	padding-left: 20px;;
+}
+
+figcaption {
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+    font-size: 30px;
+}
+
+figure {
+    border-style: solid;
+    padding: 20px;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left:auto; 
+	margin-right:auto;
+	color: black;
+}
+
+thead, tbody {
+	font-size: 20px;
+}
+
+tr, th, td {
+    padding: 20px;
+    border-style: solid;
+	border-color: black;
+	background-color: white;
+	text-align: center;
+}
+
+form {
+	background-color: rgba(220,220,220,0.5);
+	border-radius: 10px;
+    color: black;
+    margin: 20px;
+	padding: 5px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#name {
+	width: 283px; 
+
+}#email {
+	width: 290px; 
+}
+
+#message {
+	width: 300px; 
+	height: 100px;
+}
+
+#menuheader {
+	color: purple;
+}
+
+#newsheader {
+	color: goldenrod;
+}
+
+#sportsheader {
+	color: red;
+}
+
+#weatherheader {
+	color: lightskyblue;
+}
+
+#contactheader {
+	color: orangered;
+}
+
+@media screen and (min-width: 768px) {
+	header, footer {
+		height: calc (10% - 10px);
+}
+	main {
+        height: auto;
+		flex-direction: row;
+		justify-content: space-evenly;
+}
+	aside {
+        width: 50px;
+		height: calc(100% - 10px);
+}
+	#content {
+		width: calc(80% - 10px);
+		height: calc(100% - 10px);
+}
+}
